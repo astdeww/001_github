@@ -1,0 +1,44 @@
+-- https://www.youtube.com/watch?v=tRZGeaHPoaw&t=588s
+# Setting Global User Name
+git config --global user.name myname
+
+# Setting Global Email
+git config --global user.email myemai@gmail.com
+
+# Creating new branch
+git config --global init.default branch main
+
+# get the help
+git -h 
+
+# getting help for specific command
+git help config
+
+# Change into local directory
+cd c:/users/myuser
+-- C:/Users/adwar/Documents/Github/Demo_github
+
+# Turning local folder into git repo
+git init
+
+# Status of repository
+git status
+
+# tracking the file
+git add filename.extension
+
+# untracked/unstaged
+git rm --cached filename.extension
+
+# ignoring certain file with .gitignore
+	## create ".gitignore"
+	### make new file: .gitignore
+	### fill with the file that you want to ignore. e.g.:
+	#### #ignore all.txt files
+	####       *.txt
+    
+# track all file, igtore the file .git ignore 
+git add .
+
+# Commit : can track the change 
+git commit -m "first commit - commiting all files to the repository"
