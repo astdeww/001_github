@@ -41,4 +41,61 @@ git rm --cached filename.extension
 git add .
 
 # Commit : can track the change 
-git commit -m "first commit - commiting all files to the repository"
+git commit -m "first commit - commiting all files to the repository" 
+   ## when commit succes, typing git status won't show the file in red font anymore
+
+# Change file and view the difference   
+  ## ori: Eggs from chickens that listen to classical music.
+  ## changed into: Eggs from chickens that are free range.
+git status # identify wethere any difference : index.htm
+git diff # show the difference
+git add index.htm # saving/tracking the latest file
+
+  ### git has 3 environment: working file, staging (like you're holding pen), and commit (write)
+
+# returning to the previous staging
+git restore --staged index.htm
+
+# Bypass staging and commit
+git commit -a -m "third commit - updated text to free range"
+
+# Delete/remove file: secret recipe.htm 
+git rm "secret recipe.htm" # or delete the file directly from the folder
+
+# restoring the file 
+git restore "secret recipe.htm"
+
+# Rename the file 
+git mv "KCC Logo.png" "Primary Logo.png"
+git commit -m "fourth commit - changed the file name of an image"
+
+# Show all commits 
+git log
+
+# show commit log briefly
+git log --oneline
+
+# Rename the commit comment
+git commit -m "fourth commit - changed the file name KCC Logo.png to Primary Logo.png" --amend
+
+# show log with the changes
+git log -p
+
+#help for log
+git help log
+
+# jump to the certain version of commit
+git log --oneline
+git reset log_code 
+
+# Rebase git Repository
+git rebase -i --root
+
+# BRANCHES
+# Create new branch
+git branch FixTemp
+git branch # checking the available branch
+
+# move to other branch
+git switch FixTemp
+
