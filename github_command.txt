@@ -99,3 +99,8 @@ git branch # checking the available branch
 # move to other branch
 git switch FixTemp
 
+# commit after changing the secrete recipe.htm -> from 500F to 375
+git commit -a -m "updated temp for backing isntruction" 
+
+# switching back to master branch
+git switch master
