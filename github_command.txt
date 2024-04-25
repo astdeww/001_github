@@ -100,7 +100,17 @@ git branch # checking the available branch
 git switch FixTemp
 
 # commit after changing the secrete recipe.htm -> from 500F to 375
-git commit -a -m "updated temp for backing isntruction" 
+git commit -a -m "updated temp for backing instruction" 
 
 # switching back to master branch
 git switch master
+
+# Merge FixTemp into Master
+git merge -m "Merge FixTemp back to Master" FixTemp
+
+# Delete Branch
+git branch -d FixTemp
+
+# Merge branch when the master is changed too
+git switch -c UpdatedText
+git commit -a -m "update index text"
