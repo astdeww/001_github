@@ -146,3 +146,6 @@ git merge
 
 # command for combine the fetch and merge: 
 git pull 
+
+# update the code in the local, then push
+git push --all
