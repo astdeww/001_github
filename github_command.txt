@@ -113,4 +113,7 @@ git branch -d FixTemp
 
 # Merge branch when the master is changed too
 git switch -c UpdatedText
+
+
+# commit the changes in the master file 
 git commit -a -m "update index text"
