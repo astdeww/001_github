@@ -1,4 +1,4 @@
--- https://www.youtube.com/watch?v=tRZGeaHPoaw&t=588s
+-- SOURCE:: https://www.youtube.com/watch?v=tRZGeaHPoaw&t=588s
 # Setting Global User Name
 git config --global user.name myname
 
@@ -111,9 +111,38 @@ git merge -m "Merge FixTemp back to Master" FixTemp
 # Delete Branch
 git branch -d FixTemp
 
-# Merge branch when the master is changed too
+# MERGE CONFLICT
+# create new branch and straightly jump to that branch 
 git switch -c UpdatedText
 
+# create change in index.htm >> finest to best. and then commit 
+git commit -a -m "update index text, from finest to best"
 
-# commit the changes in the master file 
-git commit -a -m "update index text"
+# switch back to main 
+git switch master 
+
+# create the changes also in index.htm >> finest changed into amazing
+git commit -a -m "update index text, from finest to amazing"
+
+# if we try to merge UpdatedText into master, the result will be an error
+git merge UpdatedText # error. then we need to solve the problem by changing the version which we want to save manually. then save the file, then commit it
+git commit -a -m "update on index.htm"
+
+# PUSH LOCAL GIT TO Github
+  ## get the url of the github, then copy the url: git remote add origin https://github.com/astdeww/001_github.git
+  git branch -M main
+  git push -u origin main # push the origin to the main 
+  
+#push all branches to github 
+git push --all
+
+
+# FROM CLOUD TO LOCAL
+# when there's any changes in our github, we need to fetch the data first 
+git fetch
+
+# merging the cloud into local 
+git merge 
+
+# command for combine the fetch and merge: 
+git pull 
