@@ -16,7 +16,6 @@ git help config
 
 # Change into local directory
 cd c:/users/myuser
--- C:/Users/adwar/Documents/Github/Demo_github
 
 # Turning local folder into git repo
 git init
