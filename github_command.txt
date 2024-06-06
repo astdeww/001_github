@@ -128,7 +128,8 @@ git merge UpdatedText # error. then we need to solve the problem by changing the
 git commit -a -m "update on index.htm"
 
 # PUSH LOCAL GIT TO Github
-  ## get the url of the github, then copy the url: git remote add origin https://github.com/astdeww/001_github.git
+  ## get the url of the github, then copy the url: 
+  git remote add origin https://github.com/astdeww/001_github.git
   git branch -M main
   git push -u origin main # push the origin to the main 
   
