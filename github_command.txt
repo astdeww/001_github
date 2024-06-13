@@ -16,7 +16,6 @@ git help config
 
 # Change into local directory
 cd c:/users/myuser
--- C:/Users/adwar/Documents/Github/Demo_github
 
 # Turning local folder into git repo
 git init
@@ -129,7 +128,8 @@ git merge UpdatedText # error. then we need to solve the problem by changing the
 git commit -a -m "update on index.htm"
 
 # PUSH LOCAL GIT TO Github
-  ## get the url of the github, then copy the url: git remote add origin https://github.com/astdeww/001_github.git
+  ## get the url of the github, then copy the url: 
+  git remote add origin https://github.com/astdeww/001_github.git
   git branch -M main
   git push -u origin main # push the origin to the main 
   
@@ -146,3 +146,6 @@ git merge
 
 # command for combine the fetch and merge: 
 git pull 
+
+# update the code in the local, then push
+git push --all
