@@ -132,7 +132,21 @@ git commit -a -m "update on index.htm"
   git remote add origin https://github.com/astdeww/001_github.git
   git branch -M main
   git push -u origin main # push the origin to the main 
-  
+
+# …or create a new repository on the command line
+echo "# 002_pyspark" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/astdeww/002_pyspark.git
+git push -u origin main
+
+# …or push an existing repository from the command line
+git remote add origin https://github.com/astdeww/002_pyspark.git
+git branch -M main
+git push -u origin main
+
 #push all branches to github 
 git push --all
 
