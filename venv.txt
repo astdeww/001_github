@@ -1,0 +1,30 @@
+conda env list
+
+conda create -n timeserie_env python=3.10
+conda create --name timeseries_env --clone timeserie_env
+conda env remove --name timeserie_env
+
+conda activate timeseries_env
+
+conda install numpy pandas scipy matplotlib -c conda-forge
+
+# install statsmodels
+conda install statsmodels -c conda-forge
+
+# install nixtla
+pip install statsforecast
+pip install nixtla
+
+# install prophet
+pip install prophet
+
+create kernel
+conda activate timeseries_env
+pip install ipykernel
+python -m ipykernel install --user --name timeseries_env --display-name "Timeseries"
+jupyter notebook
+
+
+remove kernel
+jupyter kernelspec uninstall timeseries_env
+
